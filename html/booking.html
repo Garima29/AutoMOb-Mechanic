@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/booking.css">
-    <script src="../js/main.js"></script>
+   
     <title>Booking | AutoMob-Mechanic</title>
 </head>
 
@@ -16,9 +16,10 @@
         <b><a href="./home.html">AutoMob-Mechanic</a></b>
         <nav>
             <span id="name"></span>
-            <a href="./home.html">Home</a> |
-            <a href="./services.html">Services</a> |
-            <a href="./booking.html" class="active">Booking</a> |
+            <a href="./home.html">Home |</a> 
+            <a href="./login.html" id="login">Login |</a> 
+            <a href="./services.html" id="services">Services |</a> 
+            <a href="./reports.html" id="reports">Reports |</a> 
             <a href="#" id="logout" >Logout | </a>
             <a href="mailto:contact@automob.co.in">contact@automob.co.in &#9993;</a> |
             <a>999-999-9999 &#9743;</a>
@@ -26,7 +27,7 @@
     </header>
     <main>
         <h2>Book Your Service</h2>
-        <form method="POST" action="./booking-success.html">
+        <form method="POST" action="booking-success.html">
             <div>
                 <label for="name">Name:</label>
                 <input type="text" id="name" placeholder="John Daub" required pattern="^[A-Za-z]{1,}[\s][A-Za-z]{1,}$">
@@ -91,7 +92,7 @@
                 <textarea id="address" cols="50" rows="4"></textarea>
             </div>
             <div>
-                <button type="submit">Book</button>
+                <button type="submit" id="appointment">Book</button>
             </div>
             <br><br>
         </form>
@@ -100,6 +101,8 @@
     <footer>
         <span>Copyright &copy; 2020 AutoMob-Mechanic.</span>&nbsp;
         <span>All Rights Reserved.</span>
+        <script src="../js/main.js"></script>
+        <script src="../js/booking.js"></script>
     </footer>
 
 </html>
