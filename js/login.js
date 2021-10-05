@@ -7,7 +7,7 @@ document.getElementById("loginBtn").onclick=function(){
         const users= data;
         var userExists=false;
         for(var value in users){
-            if((users[value].name == name) && (users[value].password == pass)){
+            if((users[value].username == name) && (users[value].password == pass)){
                 userExists = true;
                 break;
             }
