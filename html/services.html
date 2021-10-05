@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/service.css">
-    <script src="../js/main.js"></script>
     <title>Services | AutoMob-Mechanic</title>
 </head>
 
@@ -42,7 +41,7 @@
                         <img src="../images/shutterstock_330500969.jpg" width="200" height="125">
                         <p>Periodically check and keep your car running.</p>
                         <em>Offer: 20%</em><br><br>
-                        <button>More Details</button>
+                        <button onclick="location.assign('preventive-maintenance-service.html')">More Details</button>
                         <br><br>
                     </td>
                     <td>
@@ -50,7 +49,7 @@
                         <img src="../images/shutterstock_277260179.jpg" width="200" height="125"><br>
                         <p>Full chasis body repair provided by the experts.</p>
                         <em>Offer: 10%</em><br><br>
-                        <button> More Details</button>
+                        <button onclick="location.assign('body-repair-service.html')"> More Details</button>
                         <br><br>
                     </td>
                     <td>
@@ -58,17 +57,20 @@
                         <img src="../images/shutterstock_1665024397.jpg" width="200" height="125">
                         <p>Get your car sparkling clean in just minutes.</p>
                         <em>Offer: 15%</em><br><br>
-                        <button>More Details</button>
+                        <button onclick="location.assign('car-care-service.html')">More Details</button>
                         <br><br>
                     </td>
                 </tr>
             </table>
-            <div>**Offer ends in: <span id="counter"></span></div>
+            <div class="row">
+                <div>**Offer ends in: <span id="counter"></span></div>
+            </div>
         </section>
     </main>
     <footer>
         <span>Copyright &copy; 2020 AutoMob-Mechanic.</span>&nbsp;
         <span>All Rights Reserved.</span>
+        <script src="../js/main.js"></script>
     </footer>
 </body>
 
